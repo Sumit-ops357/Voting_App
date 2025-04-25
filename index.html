@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Polling System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Polling System</h1>
+        
+        <div class="create-poll-section">
+            <h2>Create New Poll</h2>
+            <form id="createPollForm">
+                <input type="text" id="question" placeholder="Enter your question" required>
+                <div id="optionsContainer">
+                    <input type="text" class="option-input" placeholder="Option 1" required>
+                    <input type="text" class="option-input" placeholder="Option 2" required>
+                </div>
+                <button type="button" id="addOption">Add Option</button>
+                <button type="submit">Create Poll</button>
+            </form>
+        </div>
+
+        <div class="polls-list-section">
+            <h2>Active Polls</h2>
+            <div id="pollsList"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
